@@ -18,8 +18,8 @@ try:
         scaler = pickle.load(file)
     with open('target_scaler.pkl', 'rb') as file:
         target_scaler = pickle.load(file)
-    # The model was saved as rf_model but named xgboost_model.pkl
-    with open('xgboost_model.pkl', 'rb') as file:
+    # The model was saved as rf_model but named gb_model.pkl
+    with open('gb_model.pkl', 'rb') as file:
         model = pickle.load(file)
 except FileNotFoundError:
     st.error("Error: Pastikan semua file model (rentang_fitur.pkl, label_encoder.pkl, scaler_fitur.pkl, target_scaler.pkl, gb_model.pkl) tersedia di direktori yang sama dengan main.py.")
